@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+body {
+  font-family: "Quicksand", sans-serif;
+}
+/*  Start Header Section  */
+/* Start headerIntros Section */
+.headerintros {
+  height: 50px;
+  background: darkblue;
+  display: block;
+}
+.infos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+/* End headerIntros Section */
+/* Start nav Section */
+/* End nav Section */
+/* Start Banner Section */
+.carousel-item {
+  height: 60vh;
+}
+.banners1 {
+  background-image: url("../assets/img/banner/banner4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.banners2 {
+  background-image: url("../assets/img/banner/banner5.jpg");
+}
+
+.banners3 {
+  background-image: url("../assets/img/banner/banner6.jpg");
+}
+
+.btn-blues {
+  background: darkblue;
+  color: #fff;
+}
+/* End Banner Section */
+/* End  Header Section  */
+
+/* Start  Feature Section */
+
+.iconboxes {
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgb(0, 0, 0, 0.2);
+  padding: 50px 20px;
+  position: relative;
+}
+.icons {
+  width: 70px;
+  height: 70px;
+  background-color: darkcyan;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 35px);
+  top: -35px;
+}
+.iconboxes:hover {
+  background: none;
+  color: darkcyan;
+  border: 2px solid darkcyan;
+}
+
+.fromrights {
+  animation-name: fromrights;
+  animation-duration: 5s;
+}
+.fromlefts {
+  animation-name: fromlefts;
+  animation-duration: 5s;
+}
+@keyframes fromlefts {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes fromrights {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+/* End  Feature Section */
+@media (max-width: 1000px) {
+  /*  Start Header Section  */
+  .headerintros {
+    display: none;
+  }
+  /* End  Header Section  */
+}
