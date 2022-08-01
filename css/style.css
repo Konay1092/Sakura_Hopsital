@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
 body {
   font-family: "Quicksand", sans-serif;
+  background-color: rgba(230, 216, 216, 0.5);
 }
 /*  Start Header Section  */
 /* Start headerIntros Section */
